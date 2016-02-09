@@ -3,10 +3,21 @@ body
     background: #479dff;
 }
 
+.spacing
+{
+    position: absolute;
+    display: block;
+    margin-top: 400px;
+    padding-top: 400px;
+    height: 400px;
+    width: 100%;
+    clear: both;
+}
+
 .title
 {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: auto;
     font-family: "Georgia", serif;
     text-align: center;
