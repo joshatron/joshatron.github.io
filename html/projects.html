@@ -11,6 +11,17 @@
         <link href="../css/bootstrap-flatly.min.css" rel="stylesheet">
 
         <link href="../css/projects.css" rel="stylesheet">
+
+        <script>
+            function getDaysSince06272018() {
+                let element = document.getElementById("days");
+                let startDate = new Date(2018, 5, 27);
+                let now = Date.now();
+                let daysBetween = Math.round((now - startDate) / (1000 * 60 * 60 * 24));
+                element.innerHTML = daysBetween;
+            }
+            window.onload = getDaysSince06272018;
+        </script>
     </head>
 
     <body>
@@ -35,7 +46,13 @@
             </div>
         </nav>
 
-        <h2 class="d-flex mb-5 mt-2 justify-content-center">Personal Projects</h2>
+        <h2 class="d-flex mb-2 mt-2 justify-content-center">Personal Projects</h2>
+
+        <p class="d-flex mb-4 justify-content-center">
+            Below is a summary of several of my personal projects.
+            Starting on June 27, 2018 I set a goal to code every single day.
+            As of today I have kept that streak up for &nbsp;<b id="days"></b>&nbsp; days.
+        </p>
 
         <div class="container">
             <div class="card-deck">
