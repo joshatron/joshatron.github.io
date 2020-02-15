@@ -11,17 +11,6 @@
         <link href="../css/bootstrap-flatly.min.css" rel="stylesheet">
 
         <link href="../css/projects.css" rel="stylesheet">
-
-        <script>
-            function getDaysSince06272018() {
-                let element = document.getElementById("days");
-                let startDate = new Date(2018, 5, 27);
-                let now = Date.now();
-                let daysBetween = Math.round((now - startDate) / (1000 * 60 * 60 * 24));
-                element.innerHTML = daysBetween;
-            }
-            window.onload = getDaysSince06272018;
-        </script>
     </head>
 
     <body>
@@ -46,12 +35,12 @@
             </div>
         </nav>
 
-        <h2 class="d-flex mb-2 mt-2 justify-content-center">Personal Projects</h2>
+        <h2 class="mb-2 mt-2 text-center">Personal Projects</h2>
 
-        <p class="d-flex mb-4 justify-content-center">
+        <p class="mb-4 text-center">
             Below is a summary of several of my personal projects.
             Starting on June 27, 2018 I set a goal to code every single day.
-            As of today I have kept that streak up for &nbsp;<b id="days"></b>&nbsp; days.
+            As of today I have kept that streak up for <strong id="days"></strong> days.
         </p>
 
         <div class="container">
@@ -154,5 +143,6 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="../js/projects.js"></script>
     </body>
 </html>
