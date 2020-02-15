@@ -1,0 +1,17 @@
+.start-date 
+{
+    border-bottom-style: dashed;
+    border-color: gray;
+    text-align: center;
+}
+
+.date-col
+{
+    border-left-style: dashed;
+    border-color: gray;
+}
+
+.job-title
+{
+    color: #888;
+}
